@@ -17,6 +17,7 @@ SlangHostAudioProcessorEditor::SlangHostAudioProcessorEditor (SlangHostAudioProc
     // editor's size to whatever you need it to be.
     input.setMultiLine(true);
     input.setReturnKeyStartsNewLine(true);
+    input.setTabKeyUsedAsCharacter(true);
     addAndMakeVisible(input);
     programApply.onClick = [this]() {
         applyProgram();
